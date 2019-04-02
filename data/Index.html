@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+
+<!-- CSS to style the on/off buttons
+Feel free to change the background-color and font-size attributes to fit your preferences--
+<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+.button { background-color: #195B6A; border: none; color: white; padding: 16px 40px;
+text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}
+.buttonRed {background-color: #FF0033;} .buttonBlue {background-color: #0033FF;} .buttonGreen {background-color: #339900;}</style>-->
+</head>
+
+<!--Web Page body-->
+<body>
+<center>
+<h1>Klok <br>server</h1>
+<!--<a href="/update">update</a>-->
+<table>
+<tr>
+
+<td>
+<p>
+<form action="/" method="post" style="color:#FF0033;">
+  Rood:
+  <input style="border:none; color:#FF0033; font-family: Arial; font-size: 12px;" class="submit_on_enter" type="text" name="Red" placeholder=$Red>
+</form>
+</p>
+</td>
+
+<td>
+<p>
+<form action="/" method="post" style="color:#339900;">
+  Groen:
+  <input style="border:none; color:#339900; font-family: Helvetica; font-size: 12px;" class="submit_on_enter" type="text" name="Green" placeholder=$Green>
+</form>
+</p>
+</td>
+
+<td>
+<p>
+<form action="/" method="post" style="color:#0033FF;">
+  Blauw:
+  <input style="border:none; color:#0033FF; font-family: Helvetica; font-size: 12px;" class="submit_on_enter" type="text" name="Blue" placeholder=$Blue>
+</form>
+</p>
+</td>
+
+</tr>
+</table>
+</center>
+</body>
+</html>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+<!-- enter has keyCode = 13, change it if you want to use another button -->
+  if (event.keyCode == 13) {
+    this.form.submit();
+    return false;
+  }
+});
+
+});
+</script>
