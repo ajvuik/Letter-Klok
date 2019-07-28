@@ -209,7 +209,12 @@ void loop(){
       (Month==10 && Dow==0 && Day+7<31 && Hours<2)||
       (Month==10 && Dow>0 && Day+7<31)||
       (Month>3 && Month<10)){
-      Hours+=1;
+      if(Hours<24){
+        Hours+=1;
+      }
+      else{
+        Hours=1;
+      }
     }
 
     if(Now_Minutes>19){
