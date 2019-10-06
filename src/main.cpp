@@ -206,8 +206,8 @@ void loop(){
     int Dow = dow(Year, Month, Day);
     if((Month==3 && Dow==0 && Day+7>31 && Hours>2)||
       (Month==3 && Dow>0 && Day+7>31)||
-      (Month==10 && Dow==0 && Day+7<31 && Hours<2)||
-      (Month==10 && Dow>0 && Day+7<31)||
+      (Month==10 && Dow==0 && Day+7>31 && Hours<2)||
+      (Month==10 && Day+7<31)||
       (Month>3 && Month<10)){
       if(Hours<24){
         Hours+=1;
